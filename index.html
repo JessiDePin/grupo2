@@ -1,27 +1,130 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Without future</title>
+	<title>HOTEL PARADISE</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./bootstrap/css/sticky-footer-navbar.css">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="./bootstrap/css/bootstrap-theme.min.css">
-	<style type="text/css">
-		.list-group-item {
-			border: 0px;
-			background-color: #f8f8f8;
-		}
-	</style>
+    <meta charset="utf8">
+	<!--#region Bullet Navigator Skin Begin -->
+            <!-- Help: http://www.jssor.com/tutorial/set-bullet-navigator.html -->
+            <style>
+                /* jssor slider bullet navigator skin 05 css */
+                /*
+                .jssorb05 div           (normal)
+                .jssorb05 div:hover     (normal mouseover)
+                .jssorb05 .av           (active)
+                .jssorb05 .av:hover     (active mouseover)
+                .jssorb05 .dn           (mousedown)
+                */
+                .jssorb05 {
+                    position: absolute;
+                }
+                .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                    position: absolute;
+                    /* size of bullet elment */
+                    width: 16px;
+                    height: 16px;
+                    background: url(./local/img/b05.png) no-repeat;
+                    overflow: hidden;
+                    cursor: pointer;
+                }
+                .jssorb05 div { background-position: -7px -7px; }
+                .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+                .jssorb05 .av { background-position: -67px -7px; }
+                .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+            </style>
+            <style>
+                /* jssor slider arrow navigator skin 11 css */
+                /*
+                .jssora11l                  (normal)
+                .jssora11r                  (normal)
+                .jssora11l:hover            (normal mouseover)
+                .jssora11r:hover            (normal mouseover)
+                .jssora11l.jssora11ldn      (mousedown)
+                .jssora11r.jssora11rdn      (mousedown)
+                */
+                .jssora11l, .jssora11r {
+                    display: block;
+                    position: absolute;
+                    /* size of arrow element */
+                    width: 37px;
+                    height: 37px;
+                    cursor: pointer;
+                    background: url(./local/img/a11.png) no-repeat;
+                    overflow: hidden;
+                }
+                .jssora11l { background-position: -11px -41px; }
+                .jssora11r { background-position: -71px -41px; }
+                .jssora11l:hover { background-position: -131px -41px; }
+                .jssora11r:hover { background-position: -191px -41px; }
+                .jssora11l.jssora11ldn { background-position: -251px -41px; }
+                .jssora11r.jssora11rdn { background-position: -311px -41px; }
+            </style>
+
+	<link rel="stylesheet" href="./local/css/style.css">
 </head>
 <body>
-	<header class="page-header">
-		<h1 class="text-center">Another page without future</h1>
+	<header class="">
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. -->
+    <!-- ================================================== -->
+    <div id="slider1_container" style="visibility: hidden; position: relative; margin: 0 auto; width: 1140px; height: 442px; overflow: hidden;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+
+            background-color: #000; top: 0px; left: 0px;width: 100%; height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(./local/img/loading.gif) no-repeat center center;
+
+            top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="position: absolute; left: 0px; top: 0px; width: 1140px; height: 442px;
+        overflow: hidden;">
+            <div>
+                <img u="image" src2="./local/img/hotel-room-wide-wallpaper-27550.jpg" />
+            </div>
+            <div>
+                <img u="image" src2="./local/img/Ultra HD Deluxe Room.jpg" />
+            </div>
+            <div>
+                <img u="image" src2="./local/img/Print_Kempinski-Ambience-Hotel-Delhi-GuestRoom.jpg" />
+            </div>
+            <div>
+                <img u="image" src2="./local/img/Dubai-Hotel-Abu-Dhabi-4K-HD-Desktop-wallpaper.jpg" />
+            </div>
+        </div>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/tutorial/set-arrow-navigator.html -->
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">Bootstrap Carousel</a>
+    </div>
+    <!-- Jssor Slider End -->
 	</header>
 	<nav class="navbar navbar-default">
 		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
+		<div class="navbar-header menu">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
@@ -31,103 +134,283 @@
 		</div>
 
 		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		<div class="collapse navbar-collapse menu" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav">
-				<li class="active"><a href="./index.html">monday <span class="sr-only">(current)</span></a></li>
-				<li><a href="./useless.html">tuesday</a></li>
-				<li><a href="#">wednesday</a></li>
-				<li><a href="#">thursday</a></li>
-				<li><a href="#">friday</a></li>
-				<li><a href="#">saturday</a></li>
-				<li><a href="#">monday</a></li>
-				<li class="dropdown">
+				<li class=""><a href="./index.html">Lunes <span class="sr-only">(current)</span></a></li>
+				<li><a href="./index.html">Martes</a></li>
+				<li><a href="./index.html">Miercoles</a></li>
+				<li><a href="./index.html">Jueves</a></li>
+				<li><a href="./index.html">Viernes</a></li>
+				<li><a href="./index.html">Sabado</a></li>
+				<li><a href="./index.html">Domingo</a></li>
+				<!--<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">click me please <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">noting</a></li>
 						<li><a href="#">more nothing</a></li>
 						<li><a href="#">and this link</a></li>
 					</ul>
-				</li>
+				</li> -->
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</nav>
 
-	<div class="row">
-		<aside class="col-xs-3 well">
+	<div class="row cuerpo">
+		<aside class="col-xs-3 well sidebar">
 			<ul class="nav nav-pills nav-stacked">
-				<li role="presentation"><a href="#">Home</a></li>
-				<li role="presentation"><a href="#">Profile</a></li>
-				<li role="presentation"><a href="#">Messages</a></li>
+				<li role="presentation"><a href="#" onclick="get('./local/ajax/monday1.html')">Ofertas Navideñas</a></li>
+				<li role="presentation"><a href="#" onclick="get('./local/ajax/monday2.html')">Rebajas Fin de Año</a></li>
+				<li role="presentation"><a href="#" onclick="get('./local/ajax/monday3.html')">Promo VIP</a></li>
 			</ul>
 			<img src="http://www.tiempodepublicidad.com/wp-content/themes/gridthemeresponsiveFull/images/tdp/tiempo-de-publicidad.png" class="img-responsive">
 			<img src="http://1.bp.blogspot.com/-9mp1TahCzdk/VWuMihOTnYI/AAAAAAAABXc/DTE7emfEYuM/s1600/econo.jpg" class="img-responsive">
 		</aside>
-		<div class="col-xs-8 col-xs-offset-1">
-			<div class="col-xs-12">
-				<div class="col-xs-6">
-					<img src="http://www.petitpalacearanabilbaohotel.com/uploads/galeriahabitaciones/habitacion-triple-hotel-arana-bilbao.jpg" class="img-responsive">
-				</div>
-				<div class="col-xs-6">
-					<p>look this bedroom</p>
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="col-xs-6">
-					<p>this bedroom is awersome</p>
-				</div>
-				<div class="col-xs-6">
-					<img src="http://www.hoteles-silken.com/content/imgsxml/es/galerias/panel_rooms_list/2/hoteles-ciudadvitoria-habitaciones-silken-club.jpg" class="img-responsive">
-				</div>
-			</div>
-			<div class="col-xs-12">
-				<div class="col-xs-6">
-					<img src="http://www.petitpalacearanabilbaohotel.com/uploads/galeriahabitaciones/habitacion-triple-hotel-arana-bilbao.jpg" class="img-responsive">
-				</div>
-				<div class="col-xs-6">
-					<p>but this bedroom is so amazing</p>
-				</div>
-			</div>
+		<div class="col-xs-8 col-xs-offset-1" id="container">
+            <!-- /*/publicacion */ --> 
+        <div class="col-md-12/publicacion">
+           <div class="col-sm-4 col-lg-4 col-md-4 ">
+                <div class="thumbnail">
+                    <img src="./local/img/Ultra HD Deluxe Room.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.999</h4>
+                        <h4><a href="#" class="estiloAlternativo">Habitacion</a></h4>
+                        <p class="sangria Handlee">Lorem ipsum dolor sit amet, elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="botonRojo btn btn-primary btn-lg" href="/publicacion">Reservar</button>
+                        <p>
+                        <p class="visitas">15 reviews</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <div class="col-sm-4 col-lg-4 col-md-4 ">
+                <div class="thumbnail">
+                    <img src="./local/img/Ultra HD Deluxe Room.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">3.850Bsf</h4>
+                        <h4><a href="#" class="estiloAlternativo">Habitacion</a></h4>
+                        <p class="sangria Handlee">Lorem ipsum dolor sit amet, elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="botonRojo btn btn-primary btn-lg" href="/publicacion">Reservar</button>
+                        <p>
+                        <p class="visitas">15 reviews</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <div class="col-sm-4 col-lg-4 col-md-4 ">
+                <div class="thumbnail">
+                    <img src="./local/img/Ultra HD Deluxe Room.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$39.999</h4>
+                        <h4><a href="#" class="estiloAlternativo">Habitacion</a></h4>
+                        <p class="sangria Handlee">Lorem ipsum dolor sit amet, elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="botonRojo btn btn-primary btn-lg" href="/publicacion">Reservar</button>
+                        <p>
+                        <p class="visitas">15 reviews</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="./local/img/Ultra HD Deluxe Room.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">2.670Bsf</h4>
+                        <h4><a href="#" class="estiloAlternativo">Habitacion</a></h4>
+                        <p class="sangria Handlee">Lorem ipsum dolor sit amet, elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="botonRojo btn btn-primary btn-lg" href="/publicacion">Reservar</button>
+                        <p>
+                        <p class="visitas">15 reviews</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="./local/img/Ultra HD Deluxe Room.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$74.500</h4>
+                        <h4><a href="#" class="estiloAlternativo">Habitacion</a></h4>
+                        <p class="sangria Handlee">Lorem ipsum dolor sit amet, elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="botonRojo btn btn-primary btn-lg" href="/publicacion">Reservar</button>
+                        <p>
+                        <p class="visitas">15 reviews</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+           <div class="col-sm-4 col-lg-4 col-md-4">
+                <div class="thumbnail">
+                    <img src="./local/img/Ultra HD Deluxe Room.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$55.680</h4>
+                        <h4><a href="#" class="estiloAlternativo">Habitacion</a></h4>
+                        <p class="sangria Handlee">Lorem ipsum dolor sit amet, elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. .</p>
+                    </div>
+                    <div class="ratings">
+                        <button class="botonRojo btn btn-primary btn-lg" href="/publicacion">Reservar</button>
+                        <p>
+                        <p class="visitas">15 reviews</p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- /* FIN PUBLICACION */ --> 
+    </div>
+
 		</div>
 	</div>
 
-	<footer class="navbar navbar-default">
-		<div class="container">
-			<div class="col-xs-3">
-				<p class="text-center">social</p>
+	<footer class="navbar navbar-default parallax">
+        <div class="container">
+            <div class="col-xs-3 menufooter">
+                <p class="text-center">Redes Sociales</p>
 				<ul class="list-group">
-					<li class="list-group-item"><a href="">facebook</a></li>
-					<li class="list-group-item"><a href="">twitter</a></li>
+					<li class="list-group-item listafooter"><a href="">Facebook</a></li>
+					<li class="list-group-item listafooter"><a href="">Twitter</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-3">
-				<p class="text-center">page friends</p>
+			<div class="col-xs-3 menufooter">
+				<p class="text-center">Paginas Amigas</p>
 				<ul class="list-group">
-					<li class="list-group-item"><a href="">taringa</a></li>
-					<li class="list-group-item"><a href="">wikipedia</a></li>
+					<li class="list-group-item listafooter"><a href="">Taringa</a></li>
+					<li class="list-group-item listafooter"><a href="">Wikipedia</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-3">
-				<p class="text-center">another text</p>
+			<div class="col-xs-3 menufooter">
+				<p class="text-center">Noticias</p>
 				<ul class="list-group">
-					<li class="list-group-item"><a href="">text</a></li>
-					<li class="list-group-item"><a href="">text...</a></li>
+					<li class="list-group-item listafooter"><a href="">Marketing Online</a></li>
+					<li class="list-group-item listafooter"><a href="">Como Emprender?</a></li>
 				</ul>
 			</div>
-			<div class="col-xs-3">
-				<p class="text-center">nothing</p>
+			<div class="col-xs-3 menufooter">
+				<p class="text-center">Comercio Electronico</p>
 				<ul class="list-group">
-					<li class="list-group-item"><a href="">nothing</a></li>
-					<li class="list-group-item"><a href="">nothing</a></li>
+					<li class="list-group-item listafooter"><a href="">SEO</a></li>
 				</ul>
 			</div>
 
 
-			
+
 		</div>
 	</footer>
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="./jquery/js/jquery.min.js"></script>
 	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./local/js/ajax.js"></script>
+	<script src="./jssor/js/docs.min.js"></script>
+	<script src="./jssor/js/jssor.slider.mini.js"></script>
+	<script>
+
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $Idle: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $Cols: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $Cols is greater than 1, or parking position is not 0)
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Rows: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 12,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 4,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth) {
+                    jssor_slider1.$ScaleWidth(parentWidth - 30);
+                }
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+
 </body>
 </html>

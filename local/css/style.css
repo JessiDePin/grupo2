@@ -1,0 +1,97 @@
+.list-group-item {
+	border: 0px;
+	background-color: #f8f8f8;
+}
+.visitas{
+    float: right;
+}
+.botonRojo{
+    background: #E30B50;
+    border-color: black;
+}
+.botonRojo:hover{
+    border-color: black;
+    background: #FD4466;
+}
+.visitas{
+    color: #6AA74C;
+}
+.estiloAlternativo{ /*habitacion*/
+    font-weight: bolder;
+    text-decoration: none;
+}
+.pull-right{
+    color: red;
+}
+
+.sangria{
+    text-align: justify;
+    text-indent: 15%;
+
+}
+.parallax { 
+    /* The image used */
+    background-image: url("../img/parallax.jpg");
+    /* Set a specific height */
+    height: 200px; 
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px;
+}
+.menu{
+    background: #30373B;
+}
+.navbar-default .navbar-nav > li > a:hover{ /*menu letras*/
+    color: white;
+    background: #6AA74C;
+}
+.navbar-brand, .navbar-nav > li > a:focus{ /*menu letras*/
+    background: #74AD5B;
+}
+
+.navbar-brand, .navbar-nav > li > a {
+    text-shadow:none
+    }
+.menufooter{
+    color: white;
+    padding-top: 3%;
+}
+.menufooter a{
+    color: #949494;
+}
+.menufooter a:hover{
+    text-decoration: none;
+    color: #6AA74C;
+}
+.listafooter{
+    background: rgba(0, 0, 0, 0.5);
+    color: #949494;
+}
+.sidebar{
+    background: #30373B;
+    height: 100%;
+}
+.sidebar a{
+    color: white;
+}
+.sidebar a:hover{
+    text-decoration: none;
+    color: black;
+}
+.nav-pills > li > a{  /*lista*/
+    color: #949494;
+}
+.nav-pills > li > a:hover{
+    background: #6AA74C;
+    color: white;
+}
+.nav-pills > li > a:focus{
+    background: #6AA74C;
+    color: white;
+}
+.cuerpo{
+
+}
